@@ -1,0 +1,501 @@
+/* =========================================================
+   EMPLOYEE ATTRITION PREDICTION
+   Executive Midnight & Platinum Enterprise Theme
+   ========================================================= */
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap'
+);
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body,
+[class*="css"] {
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(99, 102, 241, 0.05),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(15, 23, 42, 0.03),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #f1f5f9 50%,
+            #e2e8f0 100%
+        );
+
+    color: #0f172a;
+}
+
+
+/* =========================================================
+   HIDE STREAMLIT DEFAULT UI
+   ========================================================= */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.block-container {
+    max-width: 1400px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    font-size: 2.45rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.8px;
+    color: #0f172a !important;
+}
+
+h2 {
+    font-size: 1.65rem !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+}
+
+h3 {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+}
+
+p {
+    color: #475569;
+}
+
+
+/* =========================================================
+   CUSTOM MAIN TITLE
+   ========================================================= */
+
+.main-title {
+    font-size: 2.45rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.8px !important;
+    color: #0f172a !important;
+    margin-bottom: 8px !important;
+}
+
+.subtitle {
+    color: #475569 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 20px !important;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.section-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 22px;
+}
+
+.section-description {
+    color: #64748b !important;
+    font-size: 0.78rem !important;
+    margin-bottom: 24px !important;
+}
+
+.column-title {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4f46e5) !important;
+    padding: 12px 18px !important;
+    border-radius: 12px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+    letter-spacing: -0.3px;
+    border-bottom: none !important;
+}
+
+
+/* =========================================================
+   SIDEBAR (Midnight Gradient Theme)
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4f46e5) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 8px 0 30px rgba(15, 23, 42, 0.2);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 2rem;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .sidebar-title,
+section[data-testid="stSidebar"] .sidebar-item,
+section[data-testid="stSidebar"] .sidebar-footer,
+section[data-testid="stSidebar"] span {
+    color: #f8fafc !important;
+    -webkit-text-fill-color: #f8fafc !important;
+}
+
+section[data-testid="stSidebar"] .sidebar-item b {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] hr {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+}
+
+
+/* =========================================================
+   GLASS CARDS
+   ========================================================= */
+
+div[data-testid="stVerticalBlock"] {
+    border-radius: 18px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 20px;
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 24px;
+}
+
+
+/* =========================================================
+   INPUT LABELS
+   ========================================================= */
+
+label,
+.stSelectbox label,
+.stNumberInput label,
+.stTextInput label {
+    color: #334155 !important;
+    font-weight: 600 !important;
+    font-size: 0.78rem !important;
+}
+
+
+/* =========================================================
+   NUMBER INPUT
+   ========================================================= */
+
+div[data-testid="stNumberInput"] {
+    margin-bottom: 5px;
+}
+
+div[data-testid="stNumberInput"] input {
+    background: rgba(255, 255, 255, 0.90) !important;
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    border: 1px solid rgba(203, 213, 225, 0.8) !important;
+    border-radius: 11px !important;
+    min-height: 42px !important;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03);
+    transition: all 0.2s ease;
+}
+
+div[data-testid="stNumberInput"] input:hover {
+    border-color: rgba(99, 102, 241, 0.5) !important;
+}
+
+div[data-testid="stNumberInput"] input:focus {
+    background: #ffffff !important;
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+}
+
+div[data-testid="stNumberInput"] button {
+    color: #4f46e5 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: none !important;
+}
+
+
+/* =========================================================
+   FORCED SELECTBOX LIGHT THEME OVERRIDE
+   ========================================================= */
+
+div[data-testid="stSelectbox"] {
+    margin-bottom: 5px;
+}
+
+div[data-baseweb="select"],
+div[data-baseweb="select"] > div,
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+div[data-testid="stSelectbox"] [data-baseweb="select"] {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(203, 213, 225, 0.9) !important;
+    color: #0f172a !important;
+    border-radius: 11px !important;
+    min-height: 42px !important;
+}
+
+div[data-baseweb="select"] span,
+div[data-baseweb="select"] div,
+div[data-testid="stSelectbox"] span {
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    font-size: 0.78rem !important;
+}
+
+div[data-baseweb="select"] svg {
+    fill: #4f46e5 !important;
+}
+
+/* Dropdown popover list container */
+div[data-baseweb="popover"] {
+    background: #ffffff !important;
+    border: 1px solid rgba(203, 213, 225, 0.9) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1) !important;
+}
+
+div[data-baseweb="popover"] div[role="listbox"] {
+    background: #ffffff !important;
+}
+
+div[data-baseweb="popover"] div[role="option"] {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 0.78rem !important;
+}
+
+div[data-baseweb="popover"] div[role="option"]:hover {
+    background: rgba(99, 102, 241, 0.1) !important;
+    color: #4f46e5 !important;
+}
+
+
+/* =========================================================
+   BUTTON (Pure White Text on Midnight/Indigo Gradient)
+   ========================================================= */
+
+.stButton > button {
+    width: 100% !important;
+    min-height: 48px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4f46e5) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.3);
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: linear-gradient(135deg, #1e293b, #334155, #6366f1) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+.stButton > button p {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+/* =========================================================
+   DIVIDERS & METRICS
+   ========================================================= */
+
+hr {
+    border: none !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, rgba(203, 213, 225, 0.8), transparent) !important;
+    margin: 28px 0 !important;
+}
+
+div[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    backdrop-filter: blur(15px);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #64748b !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   ALERTS, EXPANDER & PROGRESS
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 14px !important;
+    border: 1px solid rgba(203, 213, 225, 0.6);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.03);
+}
+
+div[data-testid="stExpander"] {
+    background: rgba(255, 255, 255, 0.70);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.03);
+}
+
+div[data-testid="stProgress"] {
+    background: transparent !important;
+}
+
+div[data-testid="stProgress"] > div {
+    background: rgba(203, 213, 225, 0.4) !important;
+    border-radius: 20px !important;
+}
+
+div[data-testid="stProgress"] > div > div {
+    background: linear-gradient(90deg, #0f172a, #4f46e5, #6366f1) !important;
+    border-radius: 20px !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER STYLING
+   ========================================================= */
+
+div[data-testid="stFileUploader"] {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid rgba(203, 213, 225, 0.8) !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04) !important;
+}
+
+div[data-testid="stFileUploader"] section {
+    background: rgba(248, 250, 252, 0.9) !important;
+    border: 2px dashed rgba(203, 213, 225, 0.9) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+}
+
+div[data-testid="stFileUploader"] section:hover {
+    border-color: #6366f1 !important;
+    background: rgba(255, 255, 255, 1) !important;
+}
+
+div[data-testid="stFileUploader"] button {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4f46e5) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   ABSOLUTE TAB STABILIZATION (Prevents height collapse & shaking)
+   ========================================================= */
+
+div[data-baseweb="tab-panel"] {
+    min-height: 850px !important;
+    animation: fadeInTab 0.2s ease-in-out;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* =========================================================
+   DOWNLOAD BUTTON GRADIENT OVERRIDE
+   ========================================================= */
+
+div[data-testid="stDownloadButton"] > button {
+    width: 100% !important;
+    min-height: 48px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #4f46e5) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stDownloadButton"] > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.3);
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: linear-gradient(135deg, #1e293b, #334155, #6366f1) !important;
+}
+
+div[data-testid="stDownloadButton"] > button:active {
+    transform: translateY(0);
+}
+
+div[data-testid="stDownloadButton"] > button p {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
